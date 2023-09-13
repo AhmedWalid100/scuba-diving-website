@@ -1,0 +1,552 @@
+
+
+
+.icons-container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-container:hover .icons-container, .image-container:hover .overlay {
+    opacity: 1;
+}
+.team-title{
+    border:none;
+    text-align:center;
+}
+.image-container{
+    position:relative;
+}
+    .team-title:after {
+        content: " ";
+        background-color: #4477CE;
+        width:330px;
+        height:1px;
+        display:block;
+        margin:20px auto;
+    }
+.team-flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap:wrap;
+}
+.team-flex img{
+    width:250px;
+    border-radius:20px;
+}
+.team-card h3, .team-card h4, .team-card p {
+    text-align: center;
+}
+.title-center{
+    
+    text-align:center;
+    border:none;
+    
+
+}
+.raise-up{
+    margin-top:-52px;
+}
+#About {
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.4)), url("backgroundFour.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about-contentflex{
+
+    display:flex;
+    width:80%;
+    margin:auto;
+    gap:30px;
+}
+.contactFlex{
+    display:flex;
+    width:80%;
+    margin:auto;
+}
+    .about-contentflex div {
+        width: 50%;
+        height: 400px;
+        text-align: center;
+    }
+        .about-contentflex div p {
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 20%;
+            margin-bottom: 0px;
+        }
+        .about-contentflex div img {
+            border-radius: 78% 22% 69% 31% / 19% 69% 31% 81%;
+            box-shadow: 3px 3px 53px -18px rgba(0,0,0,0.76);
+            margin: 0px auto;
+            width: 80%;
+            height: 400px;
+            object-fit: cover;
+            object-position: left center;
+            filter: saturate(80%);
+        }
+.background_first {
+    width: 100%;
+    background-image: url("diverscuba.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /*margin-top:-20px;*/
+    position: relative;
+}
+.color-grad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,50,0), rgba(0,0,0,0));
+    top: 0;
+}
+body {
+    background-color:black;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid #4477CE;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 4.5em;
+    color: #fff;
+}
+.active-section {
+    background-color: rgb(68,119,206,0.5);
+    padding:10px 20px;
+    border-radius:50px;
+}
+
+p {
+    line-height: 1.6em;
+    color: #eee;
+}
+
+main {
+    margin: 0px;
+    position:relative;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+
+
+.page__header p{
+    margin-left: 150px;
+    color:white;
+    font-weight:bold;
+}
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    color: black;
+    margin-right: 200px;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    margin-left:80px;
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+/*.footer-container{
+    display:flex;
+    width 100%;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin:0;   
+    padding:0;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-left:80px;
+}
+
+    .footer h3 {
+        margin-top: 0;
+        font-size:1em;
+    }
+    .footer p {
+        margin-top: 0;  
+        font-size:0.8em;
+    }
+
+    .footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+        .footer ul li {
+            margin-bottom: 10px;
+            font-size: 0.8em;
+        }
+
+    .footer a {
+        color: white;
+    }
+.col-md-4{
+    width:25%;
+}
+.copyright {
+    width: 100%;
+    margin-top:auto;  
+    padding:20px 0;
+    text-align: center;
+
+}
+    */
+.bubbles img {
+    width: 3%;
+    opacity: 0;
+    animation: bubble 3s linear infinite;
+}
+.bubbles {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position:absolute;
+    top:27%;
+}
+@keyframes bubble{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+        
+    }
+    25% {
+        opacity: 1;
+        
+    }
+    75% {
+        
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay:1s;
+    width:2%;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 2.5s;
+    width: 3%;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 2s;
+    width: 1%;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 1.5s;
+    width: 4%;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 0s;
+    width: 3%;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 3s;
+    width: 2%;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 2.1s;
+    width: 1%;
+}
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container h2 {
+   
+    
+    margin-bottom:0;
+    padding-bottom:0;
+}
+.landing__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding-top: 200px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.buttons-flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -350px;
+    
+}
+    .buttons-flex button {
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: rgb(68,119,206,0);
+        color: white;
+        font-weight: bold;
+        border: solid 2px white;
+        cursor:pointer;
+    }
+
+@media only screen and (min-width: 35em) {
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+        padding-top: 100px;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+.contact-section {
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.4)), url("backgroundFour.jpg");
+    color: #fff;
+    padding: 40px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+}
+
+.flex-container {
+    margin-bottom: 20px;
+    display: flex;
+    width: 65%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:280px;
+}
+
+.left-div,
+.right-div {
+   
+}
+
+    .left-div > i {
+        margin-right: 10px;
+    }
+
+.contact-form {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+    border: 1px solid #ccc;
+    color: white;
+    padding: 10px;
+    min-height: 100px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius:20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,255, 0.3);
+}
+
+.right-div {
+    width: 35%;
+}
+
+@media (max-width:1220px) {
+    .page__header p {
+        margin-left: 30px;
+    }
+
+    .navbar__menu ul {
+        padding-left: 0;
+        margin: 0;
+        text-align: right;
+        color: black;
+        margin-right: 0px;
+    }
+
+    .navbar__menu li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .navbar__menu {
+        margin-left: -50px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .landing__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        padding: 0;
+        padding-top:50px;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+        .landing__container h2 {
+            margin: 0;
+            text-align:center;
+            border:none;
+
+        }
+
+    .buttons-flex {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .background_first {
+        width: 100%;
+        background-image: linear-gradient(to left, rgba(0,0,0,1),rgba(0,0,0,0.5)), url("diverscuba.jpeg");
+        background-size: cover;
+        background-position: right;
+        min-height: 100vh;
+        /*margin-top:-20px;*/
+        position: relative;
+
+    }
+    .about-contentflex {
+        display: flex;
+        flex-direction:column;
+        width: 80%;
+        align-items:center;
+        margin: auto;
+        gap: 30px;
+    }
+        .about-contentflex div {
+            width: 100%;
+            height: 400px;
+            text-align: center;
+        }
+    .flex-container {
+        margin-bottom: 20px;
+        display: flex;
+        width: 65%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .right-div {
+        width: 120%;
+    }
+    h2 {
+        border-bottom: 1px solid #4477CE;
+        font-family: 'Oxygen', Sans-Serif;
+        font-size: 2.5em;
+        color: #fff;
+    }
+}
