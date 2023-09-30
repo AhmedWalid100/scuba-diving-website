@@ -111,9 +111,10 @@
         }
 .background_first {
     width: 100%;
-    background-image: url("diverscuba.jpeg");
+    background: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.6)), url("diverscuba.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center left;
+    
     min-height: 100vh;
     /*margin-top:-20px;*/
     position: relative;
@@ -157,9 +158,9 @@ h2 {
     color: #fff;
 }
 .active-section {
-    background-color: rgb(68,119,206,0.5);
-    padding:10px 20px;
-    border-radius:50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-bottom: solid 2px blue;
 }
 
 p {
@@ -226,7 +227,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -459,11 +460,22 @@ button {
     width: 35%;
 }
 
-@media (max-width:1220px) {
+@media (max-width:650px) {
+    .about-contentflex div img {
+        width:100%;
+    }
+    .background_first {
+        background-position: top left;
+        
+    }
     .page__header p {
         margin-left: 30px;
     }
 
+    .raise-up {
+        margin-top: 0px;
+        margin-bottom:20px;
+    }
     .navbar__menu ul {
         padding-left: 0;
         margin: 0;
@@ -480,7 +492,7 @@ button {
     .navbar__menu {
         margin-left: -50px;
         margin-right: 10px;
-        font-size: 12px;
+        font-size: 10.5px;
     }
 
     .landing__container {
@@ -546,7 +558,7 @@ button {
     h2 {
         border-bottom: 1px solid #4477CE;
         font-family: 'Oxygen', Sans-Serif;
-        font-size: 2.5em;
+        font-size: 2.2em;
         color: #fff;
     }
 }
